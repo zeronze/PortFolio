@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Project1Controller!{% endblock %}
+
+{% block stylesheets %}
+ <style>
+ #calendrier{
+ 
+  margin: auto;
+ }
+ </style>
+{% endblock %}
+
+{% block body %}
+
+<main class="container my-5">
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <h2>Calendrier</h2>
+        </div>
+        <div class="col-md-2 mb-3">
+            <a href="{{ path('app_calendar_new') }}" class="btn btn-info btn-block">Ajouter un rendez-vous</a>
+        </div>
+        <div class="col-md-2 mb-3">
+            <a href="{{ path('app_calendar_new') }}" class="btn btn-warning btn-block">Modifier un rendez-vous</a>
+        </div>
+        <div class="col-md-2 mb-3">
+            <a href="{{ path('app_calendar_new') }}" class="btn btn-danger btn-block">Supprimer</a>
+        </div>
+    </div>
+
+    <div id="calendrier"></div>
+</main>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let calendarElt = document.querySelector("#calendrier");
+
+            let calendar = new FullCalendar.Calendar(calendarElt, {
+                initialView: 'timeGridWeek',
+                locale: 'fr',
+                timeZone: 'Europe/Paris',
+                headerToolbar: {
+                    start: 'prev,next today',
+                    center: 'title',
+                    end: 'dayGridMonth,timeGridWeek'
+                },
+                events: {{ data|raw }},
+                editable: true,
+                eventResizableFromStart: true,
+                themeSystem: 'bootstrap5' // Set the themeSystem to 'bootstrap5'
+            });
+
+            calendar.on('eventChange', (e) => {
+                let url = `/api/${e.event.id}/edit`;
+                let donnees = {
+                    "title": e.event.title,
+                    "description": e.event.extendedProps.description,
+                    "start": e.event.start,
+                    "end": e.event.end,
+                    "backgroundColor": e.event.backgroundColor,
+                    "borderColor": e.event.borderColor,
+                    "textColor": e.event.textColor,
+                    "allDay": e.event.allDay
+                };
+
+                let xhr = new XMLHttpRequest();
+
+                xhr.open("PUT", url);
+                xhr.send(JSON.stringify(donnees));
+            });
+
+            calendar.render();
+        });
+    </script>
+{% endblock %}
+
+
+
+
+
+
+

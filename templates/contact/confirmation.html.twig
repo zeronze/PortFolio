@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Confirmation de Contact{% endblock %}
+
+{% block body %}
+    <main class="confirmation-page">
+        <div class="container">
+            <div class="text-center">
+                <img src="{{ asset('images/mail.png') }}" class="img-fluid rounded" alt="Développeur web">
+            </div>
+            <h1 class="text-center mt-4">Votre Message a été Envoyé avec Succès !</h1>
+            <p class="text-center">J'ai bien reçu votre message et je vous répondrai dans les plus brefs délais.</p>
+            <p class="text-center"><a href="{{ path('app_home') }}" class="btn btn-primary mt-3">Retour à la Page d'Accueil</a></p>
+        </div>
+    </main>
+{% endblock %}

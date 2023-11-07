@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Project3Controller!{% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ asset('images/Sacfr.png') }}" class="img-fluid rounded" alt="Logo">
+            <h1 class="mt-4">Projet en WordPress</h1>
+        </div>
+        <div class="col-md-6">
+            <h3>Présentation</h3>
+            <p>
+                J’ai décidé de créer un site dédié aux voyages en France, avec une particularité unique : les utilisateurs peuvent s’inscrire et partager leur propre expérience pour alimenter le blog.
+
+                Ce site se concentre exclusivement sur les voyages en France et propose la présentation de lieux incontournables dans chaque département. Vous y trouverez toutes sortes de propositions pour passer des vacances ou simplement un week-end dans la région de votre choix.
+
+                J’ai téléchargé et installé la dernière version de WordPress en local sur WampServer.
+            </p>
+            <h3>Thème et Extensions</h3>
+            <ul>
+                <li><strong>Thème :</strong> J'ai utilisé OceanWP, un thème gratuit et hautement personnalisable pour WordPress.</li>
+                <li><strong>Extensions :</strong>
+                    <ul>
+                        <li>Wp Fast Cache : Cette extension ajoute un système de cache pour accélérer le temps de chargement.</li>
+                        <li>UpdraftPlus : Cette extension permet de faire des sauvegardes automatiques du site.</li>
+                        <li>Elementor : Un constructeur de pages très populaire pour WordPress.</li>
+                        <li>Toast SEO : Pour l'optimisation du référencement naturel.</li>
+                        <li>Cookie Notice : Pour l'affichage d'une barre de notification des cookies.</li>
+                        <li>Ultimate Members : Facilite l'inscription des membres et la publication d'articles.</li>
+                        <li>Formidable Forms : Un plugin de formulaire pour créer des formulaires personnalisés.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                En utilisant ces outils, j'ai créé un site où les utilisateurs peuvent partager leurs expériences de voyage en France, avec une interface conviviale et des fonctionnalités avancées pour améliorer le référencement, la performance et l'expérience utilisateur.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

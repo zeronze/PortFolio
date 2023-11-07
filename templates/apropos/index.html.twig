@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AproposController!{% endblock %}
+
+{% block body %}
+<div class="container">
+  <header class="py-5">
+ <h1 class="text-center"></i> A propos</h1>
+
+  </header>
+
+  <main class="py-5">
+    <section class="row">
+      <div class="col-md-6 text-center">
+        <img src="{{ asset('images/devweb2.png') }}" class="img-fluid2 rounded" alt="Logo">
+      </div>
+      <div class="col-md-6">
+        <p>
+          Après treize années passées dans la restauration, j'ai décidé de faire une reconversion professionnelle dans le domaine du numérique. Passionnée d'informatique, du web et des nouvelles technologies depuis de nombreuses années, je souhaite obtenir les compétences et le titre professionnel qui m'ouvriront les portes de ce métier d'avenir.
+        </p>
+        <p>
+          J'ai effectué plusieurs formations en ligne en autodidacte sur Openclassrooms. En avril 2022, j'ai intégré la Formation Pré-qualifiante aux Métiers du Numérique de l'AFPA de Rennes, afin de consolider mon projet et mieux connaître ce métier, tout en augmentant mes chances d'intégrer une formation qualifiante.
+        </p>
+        <p>
+          Après cette formation, j'ai intégré la formation de Développeur Web et Web Mobile pour me spécialiser dans ce secteur porté vers l'avenir, où le numérique est présent partout.
+        </p>
+        <p>
+          Je suis une personne motivée, avec une forte envie d'apprendre et de me perfectionner. Je suis également créatif et déterminé, ce qui me permet d'avoir un esprit d'innovation.
+        </p>
+      </div>
+    </section>
+
+    <section class="row pt-5">
+      <div class="col-md-6 text-center order-md-last">
+        <img src="{{ asset('images/devweb.png') }}" class="img-fluid2 rounded text-center" alt="Votre image">
+      </div>
+      <div class="col-md-6">
+        <p>
+          Après treize années passées dans la restauration, j'ai acquis les diplômes suivants dans le domaine de la cuisine :
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-certificate"></i> CAP Cuisine</li>
+          <li><i class="fa-solid fa-certificate"></i> BP Cuisine</li>
+          <li><i class="fa-solid fa-certificate"></i> Mention Complémentaire en Dessert de Restaurant</li>
+        </ul>
+        <p>
+          Cependant, passionné par l'informatique et le web, j'ai effectué une reconversion professionnelle en obtenant un diplôme de <i class="fa-solid fa-certificate"></i> Bac+2 en Développeur Web et Web Mobile.
+        </p>
+      </div>
+    </section>
+
+    <section class="row mt-5">
+      <div class="col-md-12">
+       
+        <ul>
+         <h3>
+            Formation pré-qualifiante développeur web et web mobile</h3>
+            <ul>
+              <li>Avril 2022 - Juillet 2022</li>
+              <li>Découverte des métiers du numérique</li>
+              <li>Initiation HTML et CSS</li>
+              <li>Initiation PHP, MySQL</li>
+              <li>Création d'un jeu vidéo</li>
+            </ul>
+        
+         
+            <h3>Formation développeur web et web mobile avec anglais renforcé BAC + 2</h3>
+            <ul>
+              <li>Novembre 2022 - Septembre 2023</li>
+              <li>Développer la partie front-end d'une application web ou web mobile</li>
+              <li>Programmation d'un prototype d'application</li>
+              <li>Réalisation du design des pages d'un site web</li>
+              <li>Réaliser une interface utilisateur avec une solution de gestion de contenu</li>
+              <li>Développer la partie back-end d'une application web ou web mobile</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</div>
+
+{% endblock %}

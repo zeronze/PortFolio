@@ -1,0 +1,187 @@
+* {
+    cursor: url('https://img.icons8.com/ios-filled/50/40C057/3d-pointer.png'), auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-image: radial-gradient(
+        circle at 99% 33%,
+        hsla(235, 0%, 48%, 0.03) 0%,
+        hsla(235, 0%, 48%, 0.03) 37%,
+        transparent 37%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 46% 16%,
+        hsla(235, 0%, 48%, 0.03) 0%,
+        hsla(235, 0%, 48%, 0.03) 43%,
+        transparent 43%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 99% 25%,
+        hsla(235, 0%, 48%, 0.03) 0%,
+        hsla(235, 0%, 48%, 0.03) 22%,
+        transparent 22%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 57% 88%,
+        hsla(235, 0%, 48%, 0.03) 0%,
+        hsla(235, 0%, 48%, 0.03) 86%,
+        transparent 86%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 82% 78%,
+        hsla(235, 0%, 48%, 0.03) 0%,
+        hsla(235, 0%, 48%, 0.03) 22%,
+        transparent 22%,
+        transparent 100%
+      ),
+      linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  }
+  
+  p {
+    color: rgb(255, 255, 255);
+  }
+  
+  .bg {
+    background-color: rgba(51, 255, 51, 0.2);
+    color: rgb(51, 255, 51);
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+  
+  .highlighted-text {
+    color: rgb(51, 255, 51);
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  h3 {
+    color: rgb(51, 255, 51);
+  }
+  
+  h4 {
+    color: white;
+  }
+  
+  h5 {
+    color: white;
+  }
+  
+  li {
+    color: white;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .img-fluid {
+    width: 300px;
+  }
+  
+  .img-fluid2 {
+    width: 100%;
+  
+    /* Pour les écrans de taille moyenne (tablette : > 576px et <= 992px) */
+    @media (min-width: 577px) and (max-width: 992px) {
+      width: 200px; /* Ajuste la largeur de l'image selon vos préférences */
+    }
+  
+    /* Pour les écrans larges (ordinateur : > 992px) */
+    @media (min-width: 993px) {
+      width: 400px; /* Ajuste la largeur de l'image selon vos préférences */
+    }
+  }
+  
+  a {
+    color: white;
+  }
+  
+  .animate__animated {
+    animation-duration: 3s; /* Durée de l'animation (1s = 1 seconde) */
+  }
+  
+  .nav-link {
+    color: rgb(51, 255, 51);
+  }
+  /* styles.css */
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background-color: #333;
+    font-size: 16px;
+}
+
+.custom-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background-color: #333;
+    font-size: 16px;
+}
+
+.custom-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.custom-label {
+    color: white;
+    font-weight: bold;
+}
+
+
+//intro// 
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+.animation {
+  text-align: center;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Ajoutez une transition pour une apparition en douceur */
+}
+
+
+

@@ -1,0 +1,191 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Johan Mahé - Concepteur Développeur d'Applications
+{% endblock %}
+
+{% block body %}
+	<main>
+		<div class="container mt-5">
+
+			<p class="bg p-2 rounded d-inline-flex">
+				<i class="fa-solid fa-hand-peace fa-beat text-center" style="color: #dda440;"></i>
+				<span class="mx-2">Bonjour, Je m'appelle Mahé Johan</span>
+			</p>
+
+
+			<div class="row mt-5">
+				<div id="first" class="col-md-6 p-4">
+
+					<h1>Je suis un
+						<span class="mx-2 highlighted-text">développeur junior</span>
+						actuellement basé à Rennes</h1>
+
+
+					<p>Après avoir complété ma formation en tant que développeur web et web mobile, tout en renforçant mes compétences en anglais
+						<span class="mx-2 highlighted-text">
+							bac + 2
+						</span>, je suis animé par un enthousiasme débordant à l'idée de continuer à développer ma carrière dans le domaine numérique. Actuellement, je suis à la recherche d'une opportunité pour la formation de CONCEPTEUR DÉVELOPPEUR D’APPLICATIONS.</p>
+
+				</div>
+
+
+				<div id="firsttwo" class="col-md-6 p-5">
+					<img src="{{ asset('images/portrait.jpg') }}" class="img-fluid rounded border border-success" alt="Logo">
+				</div>
+
+
+				<div class="row justify-content-center align-items-center">
+					<div class="col-6 ">
+						<h4>Mes Aptitudes Techniques</h4>
+						<div
+							class="row mt-3">
+							<!-- Colonne Front-end -->
+							<div class="col-4">
+								<h5>
+									<i class="fas fa-code" style="color: #dda440;"></i>
+									FRONT-END
+								</h5>
+
+								<ul>
+									<li>
+										<i class="fab fa-html5 fa-2x" style="color: #33ff33;"></i>
+										HTML
+									</li>
+									<li>
+										<i class="fab fa-css3 fa-2x" style="color: #33ff33;"></i>
+										CSS
+									</li>
+									<li>
+										<i class="fab fa-sass fa-2x" style="color: #33ff33;"></i>
+										SCSS
+									</li>
+									<li>
+										<i class="fab fa-bootstrap fa-2x" style="color: #33ff33;"></i>
+										Bootstrap
+									</li>
+								</ul>
+							</div>
+
+							<!-- Colonne Back-end -->
+							<div class="col-4">
+								<h5>
+
+									<i class="fas fa-code" style="color: #dda440;"></i>
+
+									BACK-END
+								</h5>
+								<ul>
+									<li>
+										<i class="fab fa-symfony fa-2x" style="color: #33ff33;"></i>
+										Symfony
+									</li>
+									<li>
+										<i class="fab fa-php fa-2x" style="color: #33ff33;"></i>
+										PHP MySQL
+									</li>
+									<li>
+										<i class="fab fa-js-square fa-2x" style="color: #33ff33;"></i>
+										JavaScript
+									</li>
+									<li>
+										<i class="fab fa-php fa-2x" style="color: #33ff33;"></i>
+										PhpMyAdmin
+									</li>
+								</ul>
+							</div>
+
+							<!-- Colonne Design -->
+							<div class="col-4">
+								<h4><i class="fa-regular fa-pen-to-square"style="color: #dda440;"></i>Conception Graphique</h4>
+								<ul>
+									<li>
+										<i class="fab fa-figma fa-2x" style="color: #33ff33;"></i>
+										Figma
+									</li>
+									<li>
+										<img src="https://img.icons8.com/ios/50/40C057/canva.png" alt="Canva" width="25" height="25"/>
+										Canva
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Nouvelles colonnes -->
+
+				<div class="row mt-5 border p-3" id="competences">
+
+					<div class="col-md-4 text-blanc">
+						<i class="fa-solid m-3 fa-trophy fa-2xl" style="color:#dda440;"></i>
+						<h3>Joueur d'équipe</h3>
+						<p>En étant issu du milieu de la restauration, j'ai acquis une solide expérience de travail en équipe grâce à la nature collaborative et dynamique de ce secteur. Mon expérience dans la restauration m'a permis de développer des compétences spécifiques qui sont également applicables dans le domaine du développement web.</p>
+					</div>
+					<div class="col-md-4 text-blanc">
+						<i class="fa-solid m-3 fa-code-branch fa-2xl" style="color: #dda440;"></i>
+						<h3>Esprit</h3>
+						<p>J'ai soif d'apprendre, je suis à l'écoute, ma créativité et ma détermination me permettent d'avoir un esprit ouvert. Étant en reconversion, j'ai une forte motivation pour revenir rapidement sur le marché du travail.</p>
+					</div>
+					<div class="col-md-4 text-blanc">
+						<i class="fa-solid m-3 fa-laptop-code fa-2xl" style="color: #dda440;"></i>
+						<h3>Développement Web</h3>
+						<p>Ma passion pour le développement web m'a conduit à acquérir des compétences en HTML, CSS, JavaScript et d'autres technologies. J'ai également travaillé sur des projets personnels et suivi des cours pour renforcer mes compétences dans ce domaine en constante évolution.</p>
+					</div>
+
+				</div>
+
+
+				<div class="row mt-5 ">
+					<div class="col-md-12">
+						<h2 class="m-5">Travaux sélectionné</h2>
+						<h3>Découvrez ci-dessous certains de mes travaux présentés pour ma formation au cours des dernières années.</h3>
+
+
+					</div>
+				</div>
+
+				<div id="travaux" class="row m-5">
+					<div class="col-md-6">
+						<h4>Collectivente</h4>
+						<div class="d-flex justify-content-center mb-3 rounded">
+
+							<a href="{{ path('app_project2') }}">
+								<img src="{{ asset('images/collectivente.png') }}" class="img-fluid rounded" alt="Logo">
+							</a>
+						</div>
+						<h4>projet en WordPress</h4>
+						<div class="d-flex justify-content-center mb-3 rounded">
+
+							<a href="{{ path('app_project3') }}">
+								<img src="{{ asset('images/Sacfr.png') }}" class="img-fluid rounded" alt="Logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<h4>MusicMood</h4>
+						<div class="d-flex justify-content-center mb-3 rounded">
+
+							<a href="{{ path('app_poject1') }}">
+								<img src="{{ asset('images/musicmood.png') }}" class="img-fluid rounded" alt="Logo">
+							</a>
+						</div>
+						<h4>Integration API paiement Revolut</h4>
+						<div class="d-flex justify-content-center mb-3 rounded">
+
+							<a href="{{ path('app_project4') }}">
+								<img src="{{ asset('images/revolut.png') }}" class="img-fluid rounded" alt="Logo">
+							</a>
+						</div>
+					</div>
+				</div>
+		<div class="footer-button m-5">
+    <a href="{{ path('app_travaux') }}" class="btn btn-success">Voir Tout
+        <i class="fa-solid fa-arrow-right fa-xl" style="color: #ffffff;"></i>
+    </a>
+</div>
+
+
+		</main>
+	{% endblock %}

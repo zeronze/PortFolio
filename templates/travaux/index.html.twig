@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TravauxController!{% endblock %}
+
+{% block body %}
+<main>
+<div class="container">
+<div class="row">
+        <div class="col-md-12">
+            <h2 class="m-5">Travaux sélectionné</h2>
+            <h3>Découvrez ci-dessous certains de mes travaux présentés pour ma formation au cours des dernières années.</h3>
+        </div>
+    </div>
+    <div class="row m-5">
+        <!-- Colonne de gauche -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+         <div class="mb-3">
+                <div class="rounded">
+                    <h3 class="">Collectivente</h3>
+                     <a href="{{ path('app_project2') }}">
+                        <img src="{{ asset('images/collectivente.png') }}" class="img-fluid rounded" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="rounded">
+                    <h3 class="">MusicMood</h3>
+                    <a href="{{ path('app_poject1') }}">
+                        <img src="{{ asset('images/musicmood.png') }}" class="img-fluid rounded" alt="Logo">
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Colonne de droite -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+            <div class="mb-3">
+                <div class="rounded">
+                    <h3 class="">projet en wordpress</h3>
+                     <a href="{{ path('app_project3') }}">
+                        <img src="{{ asset('images/Sacfr.png') }}" class="img-fluid rounded" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="rounded">
+                    <h3 class="">Integration API paiment Revolut</h3>
+                      <a href="{{ path('app_project4') }}">
+                        <img src="{{ asset('images/revolut.png') }}" class="img-fluid rounded" alt="Logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div class="rounded">
+                    <h3 class="">CV en ligne johan</h3>
+                      <a href="{{ path('app_project5') }}">
+                        <img src="{{ asset('images/svenligne.png') }}" class="img-fluid rounded" alt="Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div></div></main>
+{% endblock %}

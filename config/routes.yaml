@@ -1,0 +1,28 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+confirmation_contact:
+    path: '/confirmation-contact'
+    controller: App\Controller\ContactController::confirmation
+    methods: ['GET']
+
+home:
+    path: '/'
+    controller: App\Controller\HomeController::intro
+    methods: ['GET']
+
+
+    # config/routes.yaml
+app_api_edit:
+    path: /api/{id}/edit
+    controller: App\Controller\ApiController::majEvent
+    methods: ['PUT']
+
+favicon:
+    path: /favicon.ico
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+    defaults:
+        path: /path/to/your-favicon.ico

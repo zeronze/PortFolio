@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page de contact{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Ajoutez d'autres fichiers CSS personnalisés si nécessaire -->
+{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="container">
+            <h1 class="mt-5">Contacter-moi</h1>
+            <div class="row mt-4">
+                <div class="col-md-6 text-center"> <!-- Center the content within the column -->
+                    <img src="{{ asset('images/mail2.png') }}" alt="Votre image" class="img-fluid border" style="border-color: rgb(51, 255, 51);"> <!-- Add the border class and set the border color -->
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            {{ form_row(formulaire.nom) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_row(formulaire.email) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_row(formulaire.message) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(formulaire.type, 'Choisir votre type', {'label_attr': {'style': 'color: white'}}) }}
+                            {{ form_widget(formulaire.type, {'attr': {'class': 'custom-select'}}) }}
+                        </div>
+                        <button type="submit" class="btn btn-primary m-5">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Ajoutez d'autres fichiers JavaScript personnalisés si nécessaire -->
+{% endblock %}

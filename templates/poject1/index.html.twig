@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Poject1Controller!{% endblock %}
+
+{% block body %}
+<main class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ asset('images/musicmood.png') }}" class="img-fluid rounded" alt="Logo">
+        </div>
+        <div class="col-md-6">
+            <h2>Présentation de l’application</h2>
+            <p>
+                <strong>Music Mood</strong> est l'application révolutionnaire qui vous permet de trouver la musique parfaite en fonction de votre humeur.
+                Que vous soyez joyeux, mélancolique, énergique ou détendu, Music Mood est là pour vous aider à trouver la chanson qui correspond parfaitement à votre état d'esprit.
+                Notre application propose une interface conviviale et intuitive. Il vous suffit de sélectionner votre humeur actuelle parmi une large gamme d'options disponibles, telles que "heureux", "triste", "motivé", "calme" et bien d'autres. Une fois que vous avez choisi votre humeur, Music Mood se met au travail pour trouver les meilleures correspondances musicales.
+            </p>
+            <h3>Sélection de musique en fonction de l’humeur :</h3>
+            <p>Permettez aux utilisateurs de choisir une musique en fonction de leur humeur en proposant différentes catégories ou tags associés à chaque chanson.</p>
+            <h3>Inscription et connexion :</h3>
+            <p>Les utilisateurs peuvent créer un compte en s'inscrivant sur le site. Une fois inscrits, ils peuvent se connecter à leur compte pour accéder à des fonctionnalités supplémentaires.</p>
+            <h3>Commentaires :</h3>
+            <p>Les utilisateurs connectés peuvent ajouter des commentaires aux chansons, partager leurs opinions et discuter avec d'autres utilisateurs.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Rôle d’administrateur :</h3>
+            <p>Définissez un rôle d'administrateur qui a des privilèges supplémentaires. Les administrateurs peuvent gérer les humeurs, les musiques et les utilisateurs. Ils ont accès à des fonctionnalités spécifiques telles que l'ajout, la modification et la suppression des humeurs, des musiques et des utilisateurs.</p>
+            <h3>Gestion des humeurs :</h3>
+            <p>Les administrateurs peuvent ajouter de nouvelles humeurs, supprimer ou modifier des humeurs existantes. Cela leur permet de maintenir une liste d'humeurs à jour pour faciliter la recherche de musique par les utilisateurs.</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Gestion des musiques :</h3>
+            <p>Les administrateurs peuvent ajouter de nouvelles chansons, supprimer ou modifier des chansons existantes. Ils peuvent également associer chaque chanson à une ou plusieurs humeurs correspondantes.</p>
+            <h3>Gestion des utilisateurs :</h3>
+            <p>Les administrateurs ont la possibilité de gérer les comptes d'utilisateurs, y compris la création, la suppression et la modification des comptes. Ils peuvent également gérer les autorisations et les rôles des utilisateurs.</p>
+            <h3>Page de contact :</h3>
+            <p>Fournissez une page de contact où les utilisateurs peuvent envoyer des demandes pour devenir administrateur. Les demandes peuvent être envoyées via un formulaire de contact ou par e-mail.</p>
+        </div>
+    </div>
+<h3 class="mt-4">Présentation du choix des technologies :</h3>
+<div class="row">
+    <div class="col-md-3 mb-3">
+        <img src="{{ asset('images/mailtrap.png') }}" class="img-fluid rounded" style="width: 150px;" alt="Logo">
+        <p class="text-center">Mailtrap</p>
+    </div>
+    <div class="col-md-3 mb-3">
+        <img src="{{ asset('images/apiyoutube.png') }}" class="img-fluid rounded" style="width: 150px;" alt="Logo">
+        <p class="text-center">API YouTube</p>
+    </div>
+    <div class="col-md-3 mb-3">
+        <img src="{{ asset('images/bootstrap.jpeg') }}" class="img-fluid rounded" style="width: 150px;" alt="Logo">
+        <p class="text-center">Bootstrap</p>
+    </div>
+    <div class="col-md-3 mb-3">
+        <img src="{{ asset('images/phpmyadmin.png') }}" class="img-fluid rounded" style="width: 150px;" alt="Logo">
+        <p class="text-center">phpMyAdmin</p>
+    </div>
+    <div class="col-md-3 mb-3">
+        <img src="{{ asset('images/wampserveur.png') }}" class="img-fluid rounded" style="width: 150px;" alt="Logo">
+        <p class="text-center">WampServer</p>
+    </div>
+    <div class="col-md-3 mb-3">
+        <img src="{{ asset('images/scss.png') }}" class="img-fluid rounded" style="width: 150px;" alt="Logo">
+        <p class="text-center">SCSS</p>
+    </div>
+    <div class="col-md-3 mb-3">
+        <img src="{{ asset('images/symfony.png') }}" class="img-fluid rounded" style="width: 150px;" alt="Logo">
+        <p class="text-center">Symfony</p>
+    </div>
+</div>
+
+    <!-- Ajoutez ici des informations sur les technologies utilisées -->
+</main>
+{% endblock %}
